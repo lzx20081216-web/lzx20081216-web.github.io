@@ -43,3 +43,37 @@ img {
     font-size: 15px;
     text-align: center;
 }
+
+.photo-pair {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.photo-pair figure {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+}
+
+.photo-pair img {
+    width: 100%;
+    margin: 10px auto 5px;
+}
+
+.photo-pair figcaption {
+    color: #444444;
+    font-size: 15px;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 10px auto;
+        padding: 16px;
+    }
+
+    .photo-pair {
+        flex-direction: column;
+    }
+}
